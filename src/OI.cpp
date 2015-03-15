@@ -101,7 +101,7 @@ double OI::getJoyDrvY(){
 
 double OI::getJoyDrvZ(){
     //return applyDeadZone(JoyDrv->GetZ(), JOY_DRV_DEAD_Z);
-    float scaled = lib4774::scaleJoystick(JoyDrv->GetZ(), JOYSTICK_Z_EXPONENTIAL, JOY_DRV_DEAD_Z);
+    float scaled = lib4774::scaleJoystick(JoyDrv->GetZ(), JOYSTICK_Z_EXPONENTIAL, JOY_DRV_DEAD_Z, JOY_DRV_SCALE_Z);
     SmartDashboard::PutNumber("Joystick Z", scaled);
     return scaled;
 }

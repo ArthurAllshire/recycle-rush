@@ -92,6 +92,8 @@ const int READY_CHANNEL_BOTTOM = 1;
 const int READY_CHANNEL_TOP = 2;
 const int END_CHANNEL = 3;
 
+const int MPU_BREAKOUT_INTERRUPT_CHANNEL = 14;
+
 const double WINCH_MOTOR_SPEED = 1.0;
 
 const double ELEVATOR_DIO_TIMEOUT = 5;

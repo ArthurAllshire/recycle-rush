@@ -2,8 +2,6 @@
 
 
 ResetGyro :: ResetGyro(): CommandBase ("ResetGyro"){
-    Requires(imu);
-    Requires(chassis);
     SetInterruptible(false);
     SetRunWhenDisabled(true);
 }
